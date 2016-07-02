@@ -23,10 +23,10 @@ left: 192px;
 }
 
 .cannon {
-    left: 151px;
-    top: 387px;
+    left: 156px;
+    top: 380px;
     transform-origin: 100% 100%;
-    transform: scale(0.5) rotate(0deg);
+    transform: scale(0.5) rotate(-34deg);
 
 }
 
