@@ -29,3 +29,28 @@ left: 192px;
     transform: scale(0.5) rotate(0deg);
 
 }
+
+.controlers {
+    padding: 10px;
+    background: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 650px;
+    left: 1000px;
+    height: 140px;
+    width: 100px;
+    border-radius: 20%;
+}
+
+.controlers button {
+    font-size: 1.7rem;
+    border-radius: 20%;
+}
+
+.fire {
+    color: firebrick;
+    text-transform: uppercase;
+}
