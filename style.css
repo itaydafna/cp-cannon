@@ -44,6 +44,7 @@ left: 192px;
     height: 140px;
     width: 100px;
     border-radius: 20%;
+    box-shadow: grey 20px 10px 10px;
 }
 
 .controlers button {
@@ -64,4 +65,18 @@ left: 192px;
     top: 515px;
     z-index: -500;
     transform-origin: 100% 100%;
+}
+
+
+.tv {
+    position: relative;
+    top: 45px;
+    display: inline-block;
+    z-index: -600;
+}
+
+
+.tv img {
+    transform: scale(0.5);
+
 }
