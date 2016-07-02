@@ -23,6 +23,7 @@ left: 192px;
 }
 
 .cannon {
+    position: absolute;
     left: 156px;
     top: 380px;
     transform-origin: 100% 100%;
@@ -53,4 +54,14 @@ left: 192px;
 .fire {
     color: firebrick;
     text-transform: uppercase;
+}
+
+.ball {
+    height: 5px;
+    width: 60px;
+    position: absolute;
+    left: 600px;
+    top: 515px;
+    z-index: -500;
+    transform-origin: 100% 100%;
 }
