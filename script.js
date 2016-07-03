@@ -58,7 +58,7 @@ Ball.prototype.shoot = function(el){
             } else if (
                 helper.isCollide(that.el,tv.el)){
                 el.removeChild(that.el);
-                yoram.el.style.display='inline';
+                yoram.el.style.visibility='visible';
                 var song = yoram.song;
                 song.volume = 0.015;
                 song.play();

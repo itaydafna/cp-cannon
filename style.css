@@ -97,6 +97,5 @@ left: 192px;
     top:-187px;
     left:-128px;
     z-index: 700;
-    display: none;
-
+    visibility: hidden;
 }
