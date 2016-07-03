@@ -49,9 +49,10 @@ Ball.prototype.shoot = function(el){
     el.appendChild(this.el);
     var that= this,
         left = 0,
+        angle = function(){ var x = cannon.deg; return x}(),
         move = function() {
             left+=6;
-        that.el.style.transform = 'rotate('+cannon.deg+'deg) translateX(-'+left+'px)';
+        that.el.style.transform = 'rotate('+angle+'deg) translateX(-'+left+'px)';
             if(left>2200){
                 el.removeChild(that.el);
                 return true;
