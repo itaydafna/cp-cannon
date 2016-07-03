@@ -24,10 +24,13 @@ left: 192px;
 
 .cannon {
     position: absolute;
-    left: 156px;
-    top: 380px;
-    transform-origin: 100% 100%;
+    left: 164px;
+    top: 430px;
+    transform-origin: 100% 50%;
     transform: scale(0.5) rotate(-34deg);
+    /*z-index: 400;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 50%;*/
 
 }
 
@@ -61,22 +64,39 @@ left: 192px;
     height: 5px;
     width: 60px;
     position: absolute;
-    left: 600px;
-    top: 515px;
+    left: 595px;
+    top: 525px;
+    /*z-index: 500;*/
     z-index: -500;
-    transform-origin: 100% 100%;
+    transform-origin: 100% 50%;
 }
 
 
 .tv {
     position: relative;
-    top: 45px;
+    top: 291px;
+    left: 50px;
+    height: 100px;
+    width: 120px;
     display: inline-block;
     z-index: -600;
 }
 
 
-.tv img {
+.tv-img {
     transform: scale(0.5);
+    position: absolute;
+    top: -221px;
+    left: -259px;
+
+}
+
+.yoram {
+    position: absolute;
+    transform: scale(0.21) rotate(-8deg);
+    top:-187px;
+    left:-128px;
+    z-index: 700;
+    display: none;
 
 }

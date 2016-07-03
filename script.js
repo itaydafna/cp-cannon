@@ -20,7 +20,15 @@ var cannon = {
         cannon.el.setAttribute('style', 'transform: scale(0.5) rotate(' + cannon.deg + 'deg);');
     }
 
-}
+},
+    tv = {
+        el: document.querySelector('.tv')
+    },
+
+    yoram = {
+        el: document.querySelector('.yoram'),
+        song: new Audio('kavod1.mp3')
+    };
 
 up.addEventListener('click',cannon.addDegree);
 down.addEventListener('click',cannon.decreaseDegree);
@@ -44,8 +52,23 @@ Ball.prototype.shoot = function(el){
         move = function() {
             left+=6;
         that.el.style.transform = 'rotate('+cannon.deg+'deg) translateX(-'+left+'px)';
+            if(left>2200){
+                el.removeChild(that.el);
+                return true;
+            } else if (
+                helper.isCollide(that.el,tv.el)){
+                el.removeChild(that.el);
+                yoram.el.style.display='inline';
+                var song = yoram.song;
+                song.volume = 0.015;
+                song.play();
+                return true;
+
+            }
+
     }
     helper.animate(that.el,move,1);
+
 }
 
 function shoot(){
