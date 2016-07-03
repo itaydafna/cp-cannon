@@ -49,7 +49,7 @@ Ball.prototype.shoot = function(el){
     el.appendChild(this.el);
     var that= this,
         left = 0,
-        angle = function(){ var x = cannon.deg; return x}(),
+        angle = function(){ return cannon.deg}(),
         move = function() {
             left+=6;
         that.el.style.transform = 'rotate('+angle+'deg) translateX(-'+left+'px)';
